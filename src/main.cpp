@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 int main()
 {
@@ -7,7 +8,7 @@ int main()
     while (true)
     {
         std::cout << "Write your query: " << "\n";
-        std::cin >> query;
+        std::getline(std::cin, query);
 
         // check if it's .exit
         if (query == ".exit")
